@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/script18.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>30 DESAFIOS JAVASCRIPT</h1>
+      <h3>OneBitCode{\m/,}</h3>
+    </header>
+
+    <main>
+      <section class="impar">
+        <h2 class="title">{VERY FUCKING EASY}</h2>
+        <div class="content">
+          <h2>1. Média de N números (👌)</h2>
+          <p>
+            Escreva uma função que recebe um número qualquer de números inteiros como argumento e
+            retorne a média aritmética entre eles.
+          </p>
+
+          <h2>2. Chunk String (👌)</h2>
+          <p>
+            Escreva uma função que recebe um número e retorna uma quantidade equivalente de "chunks"
+            separados por um traço "-" sem utilizar nenhuma estrutura de repetição.
+          </p>
+
+          <h2>3. Reverse (👌)</h2>
+          <p>
+            Escreva uma função que recebe um array e retorne um novo array com as posições
+            invertidas sem alterar o original.
+          </p>
+
+          <h2>4. Elevação Quadrática Individual (👌)</h2>
+          <p>
+            Escreva uma função que receve um número inteiro qualquer, eleve ao quadrado cada um de
+            seus algarismos e depois concatene o resultado retornando um único número inteiro
+          </p>
+
+          <h2>5. Encontrar Maior Letra (👌)</h2>
+          <p>
+            Escreva uma função que recebe uma string e retorna a maior letra seguindo a ordem
+            alfabética em minúsulo.<br />
+            Assuma que a string não possui nenhuma letra com acento, número ou caractere especial,
+            apenas letras e espaços
+          </p>
+
+          <h2>6. Inverter Letras das Palavras (👌)</h2>
+          <p>
+            Escreva uma função que recebe uma string e retorna cada palavra da string invertida e em
+            letras minúsculas, porém com as palavras na mesma ordem. Assuma que a string não possui
+            nenhuma letra com acento, número ou caractere especial. Apenas letras e espaços
+          </p>
+        </div>
+      </section>
+
+      <section class="par">
+        <h2 class="title">{EASY}</h2>
+        <div class="content">
+          <h2>7. Juntando e Ordenando Arrays (👌)</h2>
+          <p>
+            Escreva uma função que recebe um array bidimensional de inteiros e retorna um único
+            array contendo todos os números em ordem ascendente
+          </p>
+
+          <h2>8. Abreviando Nomes (👌)</h2>
+          <p>
+            Escreva uma função que recebe uma string contendo um nome competo e retorna uma string
+            com todos os nomes, exceto o último, abreviados e o úlitmo nome em letras maiúsculas
+            antes das abreviações separado por vírgula.
+          </p>
+
+          <h2>9. Validador de código (👌)</h2>
+          <p>
+            Escreva uma função que recebe uma string, verifica se ela possui a mesma quantidade de
+            cada letra que a compõe. retorne true caso sim, e false, caso não.
+          </p>
+
+          <h2>10. Fatorial Recursivo (👌)</h2>
+          <p>
+            Escreva uma funcçãp qie receve um número e retorna o seu fatorial sem utilizar nenhuma
+            estrutura de repetição. O fatorial de um número é igual a multiplicação de todos os
+            inteiros positivos menores ou iguais a ele. Ela deve ser capaz de retornar números
+            inteiros corretos mesmo para valores altos.
+          </p>
+
+          <h2>11. Pares Ordenados (👌)</h2>
+          <p>
+            Escreva um função que recebe um array de par ordenado (x,y) e retorn um array de pares
+            (x,y) onde cada um deles possui x e y menor ou igual ao par recebido em ordem crescente.
+            Os pares devem ser ordenados de forma que o primeiro aumente o valor de y e depois o
+            valor de x. Apenas o quadrante onde x e y são positivos deve ser considerado
+          </p>
+
+          <h2>12. Contador de dinheiro (x)</h2>
+          <p>
+            Escreva uma função que recebe um valor inteiro e retorne a quantidade de cada moeda para
+            se chegar ao valor. Deve-se sempre priorizar as moedas de maior valor (o máximo possível
+            de moedas de 500, depois de 100 e etc.) As moedas disponíveis são: 1, 2, 10, 25, 100 e
+            500.
+          </p>
+
+          <h2>13. Código Verificador (👌)</h2>
+          <p>
+            Escreva uma função que receve um número e verifica se ele é um código de identificação
+            válido, segundo as regras de verificação do digito verificador.
+          </p>
+
+          <p>A criação do dígito verificador funciona da seguinte forma:</p>
+
+          <ol>
+            <li>Some os dígitos das posições pares.</li>
+            <li>multiplique o resultado por 3</li>
+            <li>
+              Some os dígitos das posições ímpares do número original e então some esse resultado ao
+              resultado do passo anterior
+            </li>
+            <li>Encontre o resto da divisão do resultado do passo anterior por 10</li>
+            <li>
+              Se o resto da divisão for 0, o dígito verificador é 0, do contrário é 10 menos o resto
+            </li>
+          </ol>
+
+          <h2>14. Criando Classe (👌)</h2>
+          <p>
+            Escreva uma classe que contenha um método para gerar uma licença de voo e os seguintes
+            atributos:
+          </p>
+          <ul>
+            <li>Nome</li>
+            <li>Sobrenome</li>
+            <li>Data de Nascimento</li>
+            <li>Licença de vôo (que deve iniciar sempre como falso)</li>
+          </ul>
+          <p>
+            Além disso a classe deve possuir um método para criar uma licença caso não possua uma. A
+            licença deve ser uma string seguindo o seguinte padrão:
+          </p>
+          <ul>
+            <li>
+              Os primeiros 5 caracteres do sobrenome em letras maiúsculas (completado com 9's caso
+              possua menos de 5)
+            </li>
+            <li>O 6º caractere é um '-'</li>
+            <li>O 7º caractere é o algarismo da década (penúltimo) do ano de nascimento</li>
+            <li>Os 8º e 9º caracteres são o mês de nascimento</li>
+            <li>O 10º caractere é o último algarismo do ano de nascimento</li>
+            <li>O 11º caractere é um . (ponto)</li>
+            <li>O 12º caractere é a primeira letra do primeiro nome (minúscula)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="impar">
+        <h2 class="title">{Medium}</h2>
+        <div class="content">
+          <h2>15. Código Romano (x)</h2>
+          <p>
+            Escreva uma função que recebe uma string de algarismos romanos e seja capaz de traduzir
+            seu conteúdo retornando o inteiro decimal correspondente. Os algarismos romanos são:
+          </p>
+          <ul>
+            <li>I: 1</li>
+            <li>V: 5</li>
+            <li>X: 10</li>
+            <li>L: 50</li>
+            <li>C: 100</li>
+            <li>D: 500</li>
+            <li>M: 1000</li>
+          </ul>
+
+          <p>
+            Os outros números são formados a partir de dois tipos de notação, a padrão e a
+            subtrativa.
+          </p>
+          <ul>
+            <li>
+              Notação Padrão: I, II e III (1, 2 e 3) VI, VII, VIII (6, 7 e 8) X, XX, XXX (10,20 e
+              30)
+            </li>
+            <li>
+              Notação Subtrativa: IV (1-5 = 4), IX (1-10 = 9), XLIX (10-50+1-10 = 49) XC(10-100 =
+              90), CMXCIX (100-1000+10-100+1-10 = 999)
+            </li>
+          </ul>
+
+          <h2>16. Código Romano 2 (x)</h2>
+          <p>
+            Escreva uma função que recebe uma string e um número e retorne o resultado da aplicação
+            da Cifra de Cesar para descriptografar o seu conteúdo, ou seja, que retroceda cada letra
+            pelo número passado seguindo a ordem alfabética.
+          </p>
+
+          <h2>17. Relatório de missão (👌)</h2>
+          <p>
+            Escreva uma função que recebe três argumentos, uma frase, uma palavra e um array de
+            índices. A função deve retornar a frase com a palavra inserida em cada uma das posições
+            especificadas pelo array de índices.
+            <ul>
+              <li>
+                A função não deve funcionar em índices que não estejam no alcance da frase.
+              </li>
+              <li>
+                A função deve retornar a mesma frase caso o array de índices esteja vazio.
+              </li>
+            </ul>
+            <br />
+          </p>
+
+          <h2>18. Módulo de treinamento (👌)</h2>
+          <p>
+            Escreva uma classe Equation que seja capaz de lidar com equações do segundo grau.
+            Os objetos podem ser instanciados com valores padrão para a=0, b=0 e c=0.
+            <br>
+            Ela deve ter um método para retornar suas raízes na forma de um array vazio, de 1 ou 2 elementos.
+            <br>
+            O método também deve descrever os passos para a resolução da equação.
+            <br>
+            Se a, b e c forem todos iguais a 0, ela não deve calcular as raízes e deve retornar uma mensagem de erro.
+
+            <br />
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
